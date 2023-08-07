@@ -1,0 +1,22 @@
+[
+    {
+        "firstName": "seller",
+        "lastName": "seller",
+        "email": "seller@gmail.com",
+        "hash": "$2a$10$WV0gmbeATCXBqgCGE3ecWO6fiFECxIVC8thjx9MWNYx5v5SQ2HDl6",
+        "id": 1,
+        "role": "seller",
+        "dateCreated": "2022-02-16T11:17:16.188Z",
+        "dateUpdated": "2022-02-16T11:17:16.188Z"
+    },
+    {
+        "firstName": "buyer",
+        "lastName": "buyer",
+        "email": "buyer@gmail.com",
+        "hash": "$2a$10$WV0gmbeATCXBqgCGE3ecWO6fiFECxIVC8thjx9MWNYx5v5SQ2HDl6",
+        "id": 2,
+        "role": "buyer",
+        "dateCreated": "2022-02-16T11:17:16.188Z",
+        "dateUpdated": "2022-02-16T11:17:16.188Z"
+    }
+]

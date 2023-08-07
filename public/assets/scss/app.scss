@@ -1,0 +1,247 @@
+:root {
+    --theme-deafult: #20963d;
+    // This gradient color only for gym layout
+    --theme-gradient1: #01effc;
+    --theme-gradient2: #485ff2;
+  }
+
+
+@import '~bootstrap-scss/bootstrap.scss';
+@import '../scss/landing_page.scss';
+@import '../scss/animate.scss';
+@import '~react-image-lightbox/style.css';
+@import '~react-input-range/lib/css/index.css';
+@import '~react-toastify/dist/ReactToastify.css';
+@import 'font-awesome.scss';
+@import 'theme/variables';
+@import 'theme/manage_style';
+@import 'theme/style';
+@import 'theme/main';
+@import 'theme/menu';
+@import 'theme/responsive';
+
+@import "./slick.scss";
+@import "./slick-theme.scss";
+@import "./messenger.scss";
+
+
+.search-input:focus {
+  border-color: #ccc !important;
+  box-shadow: none;
+}
+
+.Select.is-focused:not(.is-open) > .Select-control {
+  border-color: unset !important;
+}
+
+.slick-arrow.slick-prev{
+  //margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  &:before {
+    color: transparent;
+  }
+}
+
+.slick-arrow.slick-next {
+  // margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  &:before {
+    color: transparent;
+  }
+}
+
+
+.default-outlined-btn {
+  &:hover, &:active {
+    border-color: #6c757d;
+    color: #6c757d !important;
+    background-color: #fff;
+  }
+}
+
+.btn.btn-outline-danger {
+  color: #dc3545 !important;
+  &:hover, &:active { 
+    color: #fff !important;
+  }
+}
+
+.btn-navbar.bold {
+  font-weight: bold !important;
+}
+
+.btn.btn-secondary {
+  background-color: #021A49;
+  border-color: #021A49;
+  &:active {
+    background-color: #021A49 !important;
+    border-color: #021A49 !important;
+  }
+}
+
+
+.dashboard-title {
+  font-size: 22px !important;
+}
+
+@media (max-width: 767px) {
+  .card .card-header div.pull-right {
+    margin-top: 1.5rem;
+  }
+}
+
+
+.card.StripeElement{
+  width: 100%;
+  margin-bottom: 0;
+}
+
+::-webkit-file-upload-button {
+  background: #021A49;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.purchase-file-input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  max-width: 100%;
+  padding: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.go-back {
+  border-radius: 10px;
+  background-color: transparent;
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+  z-index: 9;
+  top: 10px;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 700;
+  border: solid 1px;
+  padding: 0.4rem 1rem;
+}
+
+.map-search {
+  .modal-content {
+    border: 2px solid #20963d;
+    padding: 5px 10px;
+    .modal-header {
+      border: none;
+      padding: 0;
+    }
+  }
+}
+
+.map-popup {
+  .mapboxgl-popup-content {
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 700;
+
+    a {
+      cursor: pointer;
+    }
+  }
+}
+
+.link {
+  color: #20963d;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#rc-imageselect {
+  transform:scale(0.77);
+  -webkit-transform:scale(0.77);
+  transform-origin:0 0;
+  -webkit-transform-origin:0 0;
+}
+
+button.disabled {
+  cursor: initial;
+  &:hover {
+    background: #20963d !important;
+    color: #fff !important;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .seller-produces {
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+      margin: 5px;
+    }
+  }
+
+  .home-slider {
+    .home {
+      height: 38vh !important;
+    }
+    
+    .slider-contain {
+      height: 38vh !important;
+      h4 {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  .favourite-banner-panel {
+    height: 35vh !important;
+    .seller-page-info {
+      p {
+        display: none;
+      }
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    .favourite-banner-info {
+      display: flex;
+      left: 15px;
+      bottom: -55px;
+      padding: 5px 0;
+      background-color: #0000006e;
+
+      .col-md-8 {
+        width: 154px !important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .col-md-4 {
+        width: calc(100% - 154px) !important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        button {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}
